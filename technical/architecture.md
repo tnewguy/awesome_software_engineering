@@ -29,7 +29,7 @@ Link: http://highscalability.com/blog/2016/1/11/a-beginners-guide-to-scaling-to-
 - Database:
     - SQL is enough to serve first 10 million users. Scale with master-slave architecture (one write, many read).
     - NoSQL is needed for:
-        - > 5 TB of data in year
+        - more than 5 TB of data in year
         - incredibly data intensive workload, low-latency required
         - high throughput, tweak the IOs both on the reads and the writes
         - don't have any relational data

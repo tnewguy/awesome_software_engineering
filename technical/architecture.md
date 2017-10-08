@@ -4,9 +4,9 @@ Link: https://www.experts-exchange.com/articles/18666/AWS-Regions-Availability-Z
 
 #### Keyworks:
 - Geographical components:
-    - Regions
-    - Availability Zones
-    - Edge Locations
+    - **Regions**
+    - **Availability Zones**
+    - **Edge Locations**
 - Region: a geographic location that Amazon has selected to run and operate its Cloud services from.
 - Availability Zone:           
     - Different Data Centres located within a Region.
@@ -27,20 +27,20 @@ Link: http://highscalability.com/blog/2016/1/11/a-beginners-guide-to-scaling-to-
     - A consistent theme is take components and separate them out. This allow those components to scale and fail independently
     - Scalability and redundancy are not two separate concepts, you can often do both at the same time.
 - Database:
-    - SQL is enough to serve first 10 million users. Scale with master-slave architecture (one write, many read).
+    - SQL is enough to serve first **10 million users**. Scale with master-slave architecture (one write, many read).
     - NoSQL is needed for:
-        - more than 5 TB of data in year
+        - **more than 5 TB of data in year**
         - incredibly data intensive workload, low-latency required
         - high throughput, tweak the IOs both on the reads and the writes
         - don't have any relational data
     - Apply Cache in front of database.
     - A issue with one write, many read is it could only send so much write traffic to one server. 
-        - Federation:
+        - **Federation**:
             - Splitting into multiple DBs based on function.
             - **Downsides**: can't do cross database queries.
-        - Sharding:
+        - **Sharding**:
             - Splitting one dataset accross multiple hosts by id.
-        - Moving some functionality to other type of DBs:
+        - **Moving some functionality to other type of DBs**:
             - Data that doesn't require complex joins.
 - Decouple Infrastructure:
     - Use SOA/microservices that are independent with of each other. So they can be scaled or fail independently of each other.
